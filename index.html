@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ami Boss</title>
+    <style>
+        body {
+            background-color: black; 
+            color: white; 
+            text-align: center; 
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: gold;
+        }
+        img {
+            border-radius: 50%;      /* Pic gol korbe */
+            border: 4px solid blue;  /* Blue border */
+            width: 200px;
+            height: 200px;
+            object-fit: cover;       
+        }
+        a {
+            background-color: gold; 
+            color: black; 
+            padding: 12px 25px; 
+            text-decoration: none; 
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        a:hover {
+            background-color: white;
+        }
+        table {
+            margin: auto; 
+            width: 80%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px; 
+            border: 2px solid gold;
+        }
+        input, textarea {
+            padding: 10px; 
+            width: 80%; 
+            max-width: 400px;
+            border-radius: 5px; 
+            border: 1px solid gold; 
+            background: #222; 
+            color: white;
+            font-size: 15px;
+        }
+        button {
+            background-color: gold; 
+            color: black; 
+            padding: 12px 25px; 
+            border: none; 
+            border-radius: 16px; 
+            font-weight: bold; 
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: white;
+        }
+        footer {
+            background-color: #111;
+            padding: 20px;
+            margin-top: 50px;
+            border-top: 2px solid gold;
+        }
+        footer p {
+            color: gold;
+            margin: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ami Boss</h1>
+    <img src="mun.jpg" alt="Ami Boss">
+    <h2>Team A to Z</h2>
+    <p>Ami Developer</p>
+    
+    <h2>About Me</h2>
+    <p>Ami ekjon notun Web Developer. Ami shundor shundor website banate pari.</p>
+    
+    <h3>Amar Skills</h3>
+    <ul style="list-style: none; padding: 0;">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Website Design</li>
+    </ul>
+
+    <h2>Amar Projects</h2>
+    <table>
+        <tr><th>Project Nam</th><th>Ki Shikhsi</th></tr>
+        <tr><td>Portfolio Website</td><td>HTML, CSS</td></tr>
+        <tr><td>Restaurant Website</td><td>Coming Soon</td></tr>
+    </table>
+
+    <br><br>
+    <a href="https://wa.me/8801349413239" target="_blank">Amake Hire Korun</a>
+    <br><br><br>
+
+    <h2>Amake Message Din</h2>
+    <form onsubmit="sendToWhatsApp(); return false;">
+        <input type="text" id="name" placeholder="Apnar Nam" required><br><br>
+        <input type="email" id="email" placeholder="Apnar Email" required><br><br>
+        <textarea id="message" placeholder="Apnar Message" rows="4"></textarea><br><br>
+        <button type="submit">Message Pathan</button>
+    </form>
+
+    <footer>
+        <p>© 2026 Team A to Z. Shokol odhikar songrokkhito.</p>
+        <p>Ami Boss - Web Developer</p>
+    </footer>
+
+    <script>
+    function sendToWhatsApp() {
+        let name = document.getElementById('name').value;
+        let email = document.getElementById('email').value;
+        let message = document.getElementById('message').value;
+        let number = "88017XXXXXXXX"; // <-- EKHANE TOMAR NUMBER BOSHAO
+        
+        let url = "https://wa.me/" + number + "?text=" + 
+        "🔔 Notun Message! 🔔%0a%0a" +
+        "Nam: " + name + "%0a" +
+        "Email: " + email + "%0a" +
+        "Message: " + message;
+        
+        window.open(url, '_blank');
+    }
+    </script>
+</body>
+</html
