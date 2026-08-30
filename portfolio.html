@@ -3,102 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team AtoZ - Web Developer</title>
+    <title>Team AtoZ - Professional Web Design</title>
     <style>
-        *{margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif;}
-        body{background:#fff;}
-        
-        /* HERO */
-        .hero{background:linear-gradient(135deg, #333, #FF4500); color:white; text-align:center; padding:80px 20px;}
-        .hero h1{font-size:45px; margin-bottom:10px;}
-        .hero p{font-size:18px; margin-bottom:20px;}
-        .btn{background:#FF4500; color:white; padding:12px 25px; text-decoration:none; border-radius:5px; font-weight:bold;}
-        .btn:hover{background:#e03e00;}
-
-        /* ABOUT */
-        .about{padding:60px 20px; text-align:center; background:white;}
-        .about h2{font-size:35px; margin-bottom:15px; color:#333;}
-
-        /* SERVICES */
-        .services{padding:60px 20px; text-align:center; background:#f4f4f4;}
-        .services h2{margin-bottom:30px; font-size:35px; color:#333;}
-        .service-box{background:white; padding:25px; margin:15px; border-radius:8px; display:inline-block; width:280px; box-shadow:0 2px 10px rgba(0,0,0,0.1);}
-        .service-box h3{color:#FF4500; margin-bottom:10px;}
-
-        /* PORTFOLIO */
-        .portfolio{padding:60px 20px; text-align:center; background:white;}
-        .portfolio h2{font-size:35px; margin-bottom:30px; color:#333;}
-        .project-box{background:#f4f4f4; padding:20px; margin:15px; border-radius:8px; display:inline-block; width:300px;}
-        .project-box a{color:#FF4500; text-decoration:none; font-weight:bold;}
-
-        /* CONTACT */
-        .contact{padding:60px 20px; text-align:center; background:#333; color:white;}
-        .contact h2{font-size:35px; margin-bottom:20px;}
-        .contact a{color:#FF4500; text-decoration:none; display:block; margin:10px 0; font-size:18px;}
-        
-        /* FOOTER */
-        .footer{padding:20px; text-align:center; background:#222; color:#aaa;}
+        body {font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333;}
+        .header {background: #2c3e50; color: white; text-align: center; padding: 80px 20px;}
+        .btn {background: #3498db; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold;}
+        .btn:hover {background: #2980b9;}
+        .services {padding: 50px 20px; text-align: center;}
+        .service-box {background: white; margin: 20px; padding: 20px; border-radius: 10px; display: inline-block; width: 250px;}
+        .contact {background: #34495e; color: white; padding: 50px 20px; text-align: center;}
+        .contact a {color: #3498db; text-decoration: none; margin: 0 10px;}
+        .footer {background: #2c3e50; color: white; text-align: center; padding: 20px;}
+        .footer button {background: #3498db; color: white; border: none; padding: 10px 20px; margin: 5px; border-radius: 5px; cursor: pointer;}
+        .footer button:hover {background: #2980b9;}
     </style>
 </head>
 <body>
 
-    <!-- HERO SECTION -->
-    <div class="hero">
-        <h1>Hi, I'm Team AtoZ</h1>
-        <p>Aspiring Web Developer from Khulna, BD</p>
-        <a href="#contact" class="btn">Hire Me</a>
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Welcome to Team AtoZ</h1>
+        <p>We Build Professional Websites</p>
+        <a href="#contact" class="btn">Hire Us</a>
     </div>
 
-    <!-- ABOUT SECTION -->
-    <div class="about" id="about">
-        <h2>About Me</h2>
-        <p>I build clean, responsive websites using HTML & CSS. <br>Restaurant Website live ase.</p>
-    </div>
-
-    <!-- SERVICES SECTION -->
-    <div class="services" id="services">
-        <h2>My Services</h2>
+    <!-- SERVICES -->
+    <div class="services">
+        <h2>Our Services</h2>
         <div class="service-box">
             <h3>Web Design</h3>
-            <p>Responsive HTML + CSS Website for Business</p>
+            <p>Beautiful responsive websites</p>
         </div>
         <div class="service-box">
-            <h3>Bug Fix</h3>
-            <p>Website er problem solve + Speed Optimization</p>
-        </div>
-        <div class="service-box">
-            <h3>Landing Page</h3>
-            <p>1 Page Pro Website 3 din e delivery</p>
+            <h3>Development</h3>
+            <p>Fast and clean code</p>
         </div>
     </div>
 
-    <!-- PORTFOLIO SECTION -->
-    <div class="portfolio" id="portfolio">
-        <h2>My Portfolio</h2>
-        <div class="project-box">
-            <h3>Restaurant Website</h3>
-            <p>100% Responsive HTML CSS Site</p>
-            <a href="https://teamatoz767.github.io/restaurant.html" target="_blank">Live Demo >></a>
-        </div>
-    </div>
-
-    <!-- CONTACT SECTION -->
+    <!-- CONTACT -->
     <div class="contact" id="contact">
-        <h2>Contact Me</h2>
-        <p>Project er jonno amake knock dao</p>
-        <a href="mailto:Orishamoon51@gmail.com">📧 Orishamoon51@gmail.com</a>
-        <a href="https://wa.me/8801349413239" target="_blank">📱 WhatsApp: 01349413239</a>
-        <a href="https://facebook.com" target="_blank">💬 Facebook</a>
+        <h2>Contact Us</h2>
+        <p>Email: teamatoz767@gmail.com</p>
+        <p>WhatsApp: +8801XXXXXXXXX</p>
+        <a href="mailto:teamatoz767@gmail.com">Send Email</a>
+        <a href="https://wa.me/8801XXXXXXXXX">WhatsApp</a>
     </div>
 
     <!-- FOOTER -->
     <div class="footer">
-        <p>© 2026 Team AtoZ. All Rights Reserved.</p>   
-     <button onclick="alert('Thank you for contacting Team AtoZ!')">Contact Me</button>
-    <button onclick="document.body.style.background='black'; document.body.style.color='white'">Dark Mode</button>
-    <script>
-  alert("Welcome to Team AtoZ Portfolio!")
-</script>
-    </div>        
+        <p>© 2026 Team AtoZ. All Rights Reserved.</p>
+        <button onclick="alert('Thank you for contacting Team AtoZ!')">Contact Me</button>
+        <button onclick="document.body.style.background='black'; document.body.style.color='white'">Dark Mode</button>
+        <script>
+        alert("Welcome to Team AtoZ Portfolio!")
+        </script>
+    </div>
+
 </body>
 </html>
