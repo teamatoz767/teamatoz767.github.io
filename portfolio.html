@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team AtoZ - Professional Web Design</title>
     <style>
-        body {font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333;}
+        body {font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; transition: 0.3s;}
         .header {background: #2c3e50; color: white; text-align: center; padding: 80px 20px;}
         .btn {background: #3498db; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold;}
         .btn:hover {background: #2980b9;}
         .services {padding: 50px 20px; text-align: center;}
-        .service-box {background: white; margin: 20px; padding: 20px; border-radius: 10px; display: inline-block; width: 250px;}
+        .service-box {background: white; margin: 20px; padding: 20px; border-radius: 10px; display: inline-block; width: 250px; transition: 0.3s;}
         .contact {background: #34495e; color: white; padding: 50px 20px; text-align: center;}
-        .contact a {color: #3498db; text-decoration: none; margin: 0 10px;}
+        .contact a {color: #3498db; text-decoration: none; margin: 0 10px; font-weight: bold;}
         .footer {background: #2c3e50; color: white; text-align: center; padding: 20px;}
         .footer button {background: #3498db; color: white; border: none; padding: 10px 20px; margin: 5px; border-radius: 5px; cursor: pointer;}
         .footer button:hover {background: #2980b9;}
+
+        /* DARK MODE */
+        .dark {background: #121212 !important; color: white !important;}
+        .dark .service-box {background: #1e1e1e !important;}
+        .dark .contact {background: #000 !important;}
     </style>
 </head>
 <body>
@@ -30,30 +35,24 @@
     <!-- SERVICES -->
     <div class="services">
         <h2>Our Services</h2>
-        <div class="service-box">
-            <h3>Web Design</h3>
-            <p>Beautiful responsive websites</p>
-        </div>
-        <div class="service-box">
-            <h3>Development</h3>
-            <p>Fast and clean code</p>
-        </div>
+        <div class="service-box"><h3>Web Design</h3><p>Beautiful responsive websites</p></div>
+        <div class="service-box"><h3>Development</h3><p>Fast and clean code</p></div>
     </div>
 
-    <!-- CONTACT -->
+    <!-- CONTACT - TOMAR EMAIL + NUMBER DEYA -->
     <div class="contact" id="contact">
         <h2>Contact Us</h2>
-        <p>Email: teamatoz767@gmail.com</p>
-        <p>WhatsApp: +8801XXXXXXXXX</p>
-        <a href="mailto:teamatoz767@gmail.com">Send Email</a>
-        <a href="https://wa.me/8801XXXXXXXXX">WhatsApp</a>
+        <p>Email: Orishamoon51@gmail.com</p>
+        <p>WhatsApp: +8801349413239</p>
+        <a href="mailto:Orishamoon51@gmail.com">Send Email</a>
+        <a href="https://wa.me/8801349413239">WhatsApp</a>
     </div>
 
     <!-- FOOTER -->
     <div class="footer">
         <p>© 2026 Team AtoZ. All Rights Reserved.</p>
         <button onclick="alert('Thank you for contacting Team AtoZ!')">Contact Me</button>
-        <button onclick="document.body.style.background='black'; document.body.style.color='white'">Dark Mode</button>
+        <button onclick="document.body.classList.toggle('dark')">Dark Mode</button>
         <script>
         alert("Welcome to Team AtoZ Portfolio!")
         </script>
