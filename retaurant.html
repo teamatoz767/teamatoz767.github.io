@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spice Garden Restaurant</title>
+<style>
+  /* 1. COLOR + FONT */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #FFF8F0; /* halka color */
+    color: #333;
+  }
+  
+  /* 2. BOX MODEL + DISPLAY */
+  header {
+    background: #D62828; /* lal color */
+    color: white;
+    padding: 20px; /* box model */
+    text-align: center;
+    position: sticky; /* 3. POSITION */
+    top: 0;
+    z-index: 100;
+  }
+
+  /* 4. FLEXBOX - Menu */
+  nav {
+    display: flex; /* flexbox */
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s; /* 5. ANIMATION er jonno */
+  }
+  nav a:hover {
+    color: #FCBF49; /* hover e color change = animation */
+    transform: scale(1.1); /* choto animation */
+  }
+
+  /* 6. GRID - Khabar er item */
+  .menu-grid {
+    display: grid; /* grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+  }
+  .card {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* shadow */
+    text-align: center;
+    transition: 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-10px); /* hover animation */
+  }
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  /* 7. RESPONSIVE - Mobile First */
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column; /* mobile e menu niche niche */
+    }
+  }
+
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🍛 Spice Garden Restaurant</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section>
+  <h2 style="text-align:center; padding-top:30px;">Amader Special Menu</h2>
+  <div class="menu-grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400" alt="Food">
+      <h3>Chicken Biryani</h3>
+      <p>Price: 250 TK</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1565299624946-ec94e1f6d2b1?w=400" alt="Food">
+      <h3>Beef Burger</h3>
+      <p>Price: 180 TK</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1473093290287-9fe5c1d0b1d3?w=400" alt="Food">
+      <h3>Seafood Pasta</h3>
+      <p>Price: 320 TK</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Spice Garden. Address: Khulna, BD</p>
+</footer>
+
+</body>
+</html>
